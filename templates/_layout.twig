@@ -5,10 +5,10 @@
 
     <title>Visit England: Holidays, days out and tourist information for England</title>
     <meta name="description" content="Discover great UK holiday ideas for family holidays, weekends away, short breaks and days out in England.">
-    <link rel="canonical" href="{{ craft.request.url }}">
+    <link rel="canonical" href="{{ craft.app.request.absoluteUrl() }}">
 
     {# Internal CSS #}
-    {% includeCssFile siteUrl~"src/css/style.css" %}
+    {% do view.registerCssFile("/src/css/style.css") %}
 </head>
 
 
