@@ -5,20 +5,48 @@
 
     </header>
 
-    <h2>Locations</h2>
+    {# Locations #}
+    <section id="locations">
 
-    <section>
+        <h2>Locations</h2>
+
+    </section>
+
+
+    {# Activites #}
+    <section id="activities">
+
         <h2>Things to do</h2>
 
         {% for entry in craft.entries.section('activities').limit(3).all() %}
             <h5>{{ entry.title }}</h5>
         {% endfor %}
+
     </section>
 
 
-    <h2>Plan your visit</h2>
+    {# Plan your visit #}
+    <section id="plan-your-visit">
 
-    <h2>Newsletter</h2>
+        <h2>Plan your visit</h2>
 
-    <h2>Social</h2>
+    </section>
+
+
+    {# Newsletter #}
+    <section id="newsletter">
+
+        <h2>Newsletter</h2>
+
+
+    </section>
+
+
+    {# Social #}
+    <section>
+
+        <h2>Social</h2>
+
+    </section>
+
 {% endblock %}

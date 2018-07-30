@@ -30,7 +30,7 @@ return [
     // Dev environment settings
     'dev' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => 'http://dev.craft.com',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,

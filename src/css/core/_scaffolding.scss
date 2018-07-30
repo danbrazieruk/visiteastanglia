@@ -1,0 +1,47 @@
+// Stick Footer
+body {
+	@include flexbox;
+	min-height:100vh;
+	@include flex-direction(column);
+	overflow-x: hidden;
+}
+
+main {
+	@include flex(1);
+}
+
+
+// Link hover background
+// -- override with .bg-none
+a:not(.bg-none):not(.btn) {
+	box-shadow: none;
+	@include transition(all 0.15s ease-in-out);
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparentize(theme-color('primary'), 0.7);
+		box-shadow: 3px 0 transparentize(theme-color('primary'), 0.7), -3px 0 transparentize(theme-color('primary'), 0.7);
+	}
+}
+
+
+// Section spacing
+.page-header {
+	margin-bottom: $section-spacer / 2;
+
+	@media screen and (min-width: breakpoint-min('lg')) {
+		margin-bottom: $section-spacer;
+
+	}
+}
+
+.content-block {
+	padding-top: $section-spacer / 2;
+	padding-bottom: $section-spacer / 2;
+
+	@media screen and (min-width: breakpoint-min('lg')) {
+		padding-top: $section-spacer;
+		padding-bottom: $section-spacer;
+	}
+}
