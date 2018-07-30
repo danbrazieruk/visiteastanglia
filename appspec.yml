@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/visitengland
+permissions:
+  - object: /var/www/visitengland
+    pattern: "**"
+    owner: www-data
+    group: www-data
+    mode: 4755
+    type:
+      - directory
+      - file
