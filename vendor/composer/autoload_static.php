@@ -46,6 +46,10 @@ class ComposerStaticInit779dd26ff6971d4419dd7c29765adc9a
         array (
             'enshrined\\svgSanitize\\' => 22,
         ),
+        'd' => 
+        array (
+            'doublesecretagency\\bootstrap\\' => 29,
+        ),
         'c' => 
         array (
             'creocoder\\nestedsets\\' => 21,
@@ -189,6 +193,10 @@ class ComposerStaticInit779dd26ff6971d4419dd7c29765adc9a
         'enshrined\\svgSanitize\\' => 
         array (
             0 => __DIR__ . '/..' . '/enshrined/svg-sanitize/src',
+        ),
+        'doublesecretagency\\bootstrap\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src',
         ),
         'creocoder\\nestedsets\\' => 
         array (
@@ -2626,6 +2634,13 @@ class ComposerStaticInit779dd26ff6971d4419dd7c29765adc9a
         'craftcms\\oauth2\\client\\provider\\CraftIdUser' => __DIR__ . '/..' . '/craftcms/oauth2-craftid/src/provider/CraftIdUser.php',
         'creocoder\\nestedsets\\NestedSetsBehavior' => __DIR__ . '/..' . '/creocoder/yii2-nested-sets/src/NestedSetsBehavior.php',
         'creocoder\\nestedsets\\NestedSetsQueryBehavior' => __DIR__ . '/..' . '/creocoder/yii2-nested-sets/src/NestedSetsQueryBehavior.php',
+        'doublesecretagency\\bootstrap\\Bootstrap' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/Bootstrap.php',
+        'doublesecretagency\\bootstrap\\models\\Settings' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/models/Settings.php',
+        'doublesecretagency\\bootstrap\\twigextensions\\BootstrapTwigExtension' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/twigextensions/BootstrapTwigExtension.php',
+        'doublesecretagency\\bootstrap\\twigextensions\\UseBootstrap_Node' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/twigextensions/UseBootstrap_Node.php',
+        'doublesecretagency\\bootstrap\\twigextensions\\UseBootstrap_TokenParser' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/twigextensions/UseBootstrap_TokenParser.php',
+        'doublesecretagency\\bootstrap\\web\\assets\\BootstrapAssets' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/web/assets/BootstrapAssets.php',
+        'doublesecretagency\\bootstrap\\web\\assets\\jQueryAssets' => __DIR__ . '/..' . '/doublesecretagency/craft-bootstrap/src/web/assets/jQueryAssets.php',
         'enshrined\\svgSanitize\\Sanitizer' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/Sanitizer.php',
         'enshrined\\svgSanitize\\data\\AllowedAttributes' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AllowedAttributes.php',
         'enshrined\\svgSanitize\\data\\AllowedTags' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/AllowedTags.php',

@@ -24,6 +24,7 @@ return array(
     'modules\\' => array($baseDir . '/modules'),
     'mikehaertl\\shellcommand\\' => array($vendorDir . '/mikehaertl/php-shellcommand/src'),
     'enshrined\\svgSanitize\\' => array($vendorDir . '/enshrined/svg-sanitize/src'),
+    'doublesecretagency\\bootstrap\\' => array($vendorDir . '/doublesecretagency/craft-bootstrap/src'),
     'creocoder\\nestedsets\\' => array($vendorDir . '/creocoder/yii2-nested-sets/src'),
     'craftcms\\oauth2\\client\\' => array($vendorDir . '/craftcms/oauth2-craftid/src'),
     'craft\\composer\\' => array($vendorDir . '/craftcms/plugin-installer/src'),
