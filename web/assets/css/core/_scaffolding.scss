@@ -1,0 +1,9 @@
+.content-block {
+	padding-top: $section-spacer / 2;
+	padding-bottom: $section-spacer / 2;
+
+	@media screen and (min-width: breakpoint-min('lg')) {
+		padding-top: $section-spacer;
+		padding-bottom: $section-spacer;
+	}
+}

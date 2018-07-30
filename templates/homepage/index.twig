@@ -6,47 +6,67 @@
     </header>
 
     {# Locations #}
-    <section id="locations">
+    <section id="locations" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Locations</h2>
 
-        <h2>Locations</h2>
-
+                </div>
+            </div>
+        </div>
     </section>
 
 
     {# Activites #}
-    <section id="activities">
+    <section id="activities" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Things to do</h2>
 
-        <h2>Things to do</h2>
-
-        {% for entry in craft.entries.section('activities').limit(3).all() %}
-            <h5>{{ entry.title }}</h5>
-        {% endfor %}
-
+                    {% for entry in craft.entries.section('activities').limit(3).all() %}
+                        <h5>{{ entry.title }}</h5>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </section>
 
 
     {# Plan your visit #}
-    <section id="plan-your-visit">
-
-        <h2>Plan your visit</h2>
-
+    <section id="plan-your-visit" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Plan your visit</h2>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     {# Newsletter #}
-    <section id="newsletter">
-
-        <h2>Newsletter</h2>
-
-
+    <section id="newsletter" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Newsletter</h2>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     {# Social #}
-    <section>
-
-        <h2>Social</h2>
-
+    <section class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Social</h2>
+                </div>
+            </div>
+        </div>
     </section>
 
 {% endblock %}

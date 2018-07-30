@@ -1,30 +1,31 @@
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Visit England: Holidays, days out and tourist information for England</title>
-    <meta name="description" content="Discover great UK holiday ideas for family holidays, weekends away, short breaks and days out in England.">
-    <link rel="canonical" href="{{ craft.app.request.absoluteUrl() }}">
-
-    {# Internal CSS #}
-    {% do view.registerCssFile("/src/css/style.css") %}
-</head>
+{# Include meta header
+ # -- set meta, include css etc.
+ #}
+{% include '_meta_header' %}
 
 
-{# Navigation #}
-<nav>
-    Navigation
-</nav>
+{# Set main class
+ # -- target main.class for page-specific styling
+ #}
+{% if mainClass is not defined %}
+    {% set mainClass = entry is defined ? entry.section.handle : craft.request.firstSegment %}
+{% endif %}
+
+
+{# Include navigation #}
+{% include '_global_nav' %}
 
 
 {# Include main content #}
-<main>
+<main {% if mainClass is defined %}class="{{ mainClass }}"{% endif %}>
     {% block main %}
     {% endblock %}
 </main>
 
+{# Footer view #}
+{% include '_global_footer' %}
 
-<footer id="global-footer">
-    <p>The official tourist board for England.</p>
-</footer>
+
+{# Closing tags, scripts etc. #}
+{% include '_meta_footer' %}
