@@ -39,7 +39,7 @@ return [
     // Staging environment settings
     'staging' => [
         // Base site URL
-        'siteUrl' => 'visitengland.danbrazier.co.uk',
+        'siteUrl' => 'http://visitengland.danbrazier.co.uk',
     ],
 
     // Production environment settings
