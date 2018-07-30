@@ -143,7 +143,7 @@ a {
   -webkit-text-decoration-skip: objects; }
   a:hover {
     color: #0056b3;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -2109,11 +2109,11 @@ fieldset:disabled a.btn {
   background-color: transparent; }
   .btn-link:hover {
     color: #0056b3;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent;
     border-color: transparent; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
+    text-decoration: none;
     border-color: transparent;
     box-shadow: none; }
   .btn-link:disabled, .btn-link.disabled {
@@ -6498,6 +6498,12 @@ a.text-dark:hover, a.text-dark:focus {
     .content-block {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
+
+.text-spaced {
+  letter-spacing: 0.125rem; }
+
+.text-opacity {
+  opacity: 0.5; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
