@@ -30,7 +30,7 @@ return [
     // Dev environment settings
     'dev' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => dev.craft.com,
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
@@ -39,7 +39,7 @@ return [
     // Staging environment settings
     'staging' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => visitengland.danbrazier.co.uk,
     ],
 
     // Production environment settings
