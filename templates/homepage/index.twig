@@ -1,11 +1,18 @@
-<h1>Home Content</h1>
+{% extends '_layout' %}
 
-<h2>Locations</h2>
+{% block main %}
+    <h1>Home Content</h1>
 
-<h2>Things to do</h2>
+    <h2>Locations</h2>
 
-<h2>Plan your visit</h2>
+    <h2>Things to do</h2>
+    {% for entry in craft.entries.section('activities').limit(3).all() %}
+        <h3>{{ entry.title }}</h3>
+    {% endfor %}
 
-<h2>Newsletter</h2>
+    <h2>Plan your visit</h2>
 
-<h2>Social</h2>
+    <h2>Newsletter</h2>
+
+    <h2>Social</h2>
+{% endblock %}
