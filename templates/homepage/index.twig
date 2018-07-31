@@ -6,8 +6,9 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="display-4">
-                        {% set entry in craft.entries.section('listicles').first() %}
-                        {%  endfor %}
+                        {% set listicle = craft.entries.section('listicles').one() %}
+                            {{ listicle }}
+
                     </h2>
                 </div>
             </div>
@@ -26,19 +27,19 @@
             <div class="row">
 
                 {# Hero activity #}
-                {% set entry in craft.entries.section('activities').first().all() %}
-                    <div class="col-5">
-                        <h5>{{ entry.title }}</h5>
-                    </div>
-                {% endset %}
+                {% set activityHero = craft.entries.section('activities').one() %}
+                <div class="col-5">
+                    <h5>{{ activityHero.title }}</h5>
+                </div>
+
 
 
                 {# Further activities #}
                 <div class="col-lg-7">
                     <div class="row">
-                        {% for entry in craft.entries.section('activities').limit(4).offset(1).all() %}
+                        {% for activity in craft.entries.section('activities').limit(4).offset(1).all() %}
                             <div class="col-6">
-                                <h5>{{ entry.title }}</h5>
+                                <h5>{{ activity.title }}</h5>
                             </div>
                         {% endfor %}
                     </div>
