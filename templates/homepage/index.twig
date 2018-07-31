@@ -2,8 +2,51 @@
 
 {% block main %}
     <header>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-4">
+                        {% set entry in craft.entries.section('listicles').first() %}
+                        {%  endfor %}
+                    </h2>
+                </div>
+            </div>
+        </div>
     </header>
+
+    {# Activites #}
+    <section id="activities" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Things to do</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                {# Hero activity #}
+                {% set entry in craft.entries.section('activities').first().all() %}
+                    <div class="col-5">
+                        <h5>{{ entry.title }}</h5>
+                    </div>
+                {% endset %}
+
+
+                {# Further activities #}
+                <div class="col-lg-7">
+                    <div class="row">
+                        {% for entry in craft.entries.section('activities').limit(4).offset(1).all() %}
+                            <div class="col-6">
+                                <h5>{{ entry.title }}</h5>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     {# Locations #}
     <section id="locations" class="content-block">
@@ -12,22 +55,6 @@
                 <div class="col">
                     <h2>Locations</h2>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    {# Activites #}
-    <section id="activities" class="content-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Things to do</h2>
-
-                    {% for entry in craft.entries.section('activities').limit(3).all() %}
-                        <h5>{{ entry.title }}</h5>
-                    {% endfor %}
                 </div>
             </div>
         </div>
