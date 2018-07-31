@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="display-4">{{ listicle }}</h2>
+                    <h2 class="display-4 hero-heading">{{ listicle }}</h2>
                 </div>
             </div>
         </div>
@@ -43,9 +43,13 @@
                     <div class="row">
                         {% for activity in craft.entries.section('activities').limit(4).offset(1) %}
                             <div class="col-6">
-                                <img src="{{ siteUrl }}uploads/activities/{{ activity.activityImage.one() }}.jpg" class="img-fluid">
+                                <div class="activity">
+                                    <div class="">
+                                        <img src="{{ siteUrl }}uploads/activities/{{ activity.activityImage.one() }}.jpg" class="img-fluid">
+                                    </div>
 
-                                <h5>{{ activity.title }}</h5>
+                                    <h5>{{ activity.title }}</h5>
+                                </div>
                             </div>
                         {% endfor %}
                     </div>
@@ -93,16 +97,17 @@
 
 
     {# Social #}
-    <section class="content-block">
+    <section id="instagram" class="content-block">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="text-uppercase text-spaced">#VisitEngland</h2>
+                    <h2 class="text-uppercase text-spaced mb-3">#VisitEngland</h2>
                 </div>
             </div>
-
-            {# Instagram feed #}
         </div>
+
+        {# Instagram feed #}
+        {% include '_instagram_feed' %}
     </section>
 
 {% endblock %}

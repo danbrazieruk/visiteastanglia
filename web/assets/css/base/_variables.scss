@@ -34,13 +34,13 @@ $grays: map-merge((
 		"900": $gray-900
 ), $grays);
 
-$blue:    #02182b;
+$blue:    #23395b;
 $indigo:  #6610f2 !default;
 $purple:  #6247aa;
 $pink:    #e83e8c !default;
 $red:     #e42518;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$yellow:  #f7ef81;
 $green:   #79b791;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -62,7 +62,7 @@ $colors: map-merge((
 		"gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       $red;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -250,7 +250,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        inherit !default;
+$headings-font-family:        'Palanquin Dark', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;

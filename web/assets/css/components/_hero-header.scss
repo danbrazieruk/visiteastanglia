@@ -2,4 +2,9 @@ header.hero-header {
 	min-height: 40vh;
 	background-size: cover;
 	background-position: center;
+
+	.hero-heading {
+		background: theme-color(primary);
+		color: $white;
+	}
 }
