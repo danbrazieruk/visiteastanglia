@@ -1,19 +1,19 @@
 {% extends '_layout' %}
 
 {% block main %}
-    <header>
+
+    {# Hero listicle header #}
+    {% set listicle = craft.entries.section('listicles').one() %}
+    <header class="hero-header" style="background-image: url('{{ siteUrl }}uploads/listicles/{{ listicle.listicleImage.one() }}.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="display-4">
-                        {% set listicle = craft.entries.section('listicles').one() %}
-                            {{ listicle }}
-
-                    </h2>
+                    <h2 class="display-4">{{ listicle }}</h2>
                 </div>
             </div>
         </div>
     </header>
+
 
     {# Activites #}
     <section id="activities" class="content-block">
@@ -28,8 +28,12 @@
 
                 {# Hero activity #}
                 {% set activityHero = craft.entries.section('activities').one() %}
+
                 <div class="col-5">
-                    <h5>{{ activityHero.title }}</h5>
+                    {# todo: handle image fallbacks #}
+                    <img src="{{ siteUrl }}uploads/activities/{{ activityHero.activityImage.one() }}.jpg" class="img-fluid">
+
+                    <h5>{{ activityHero }}</h5>
                 </div>
 
 
@@ -37,8 +41,10 @@
                 {# Further activities #}
                 <div class="col-lg-7">
                     <div class="row">
-                        {% for activity in craft.entries.section('activities').limit(4).offset(1).all() %}
+                        {% for activity in craft.entries.section('activities').limit(4).offset(1) %}
                             <div class="col-6">
+                                <img src="{{ siteUrl }}uploads/activities/{{ activity.activityImage.one() }}.jpg" class="img-fluid">
+
                                 <h5>{{ activity.title }}</h5>
                             </div>
                         {% endfor %}
@@ -90,10 +96,12 @@
     <section class="content-block">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h2>Social</h2>
+                <div class="col text-center">
+                    <h2 class="text-uppercase text-spaced">#VisitEngland</h2>
                 </div>
             </div>
+
+            {# Instagram feed #}
         </div>
     </section>
 
