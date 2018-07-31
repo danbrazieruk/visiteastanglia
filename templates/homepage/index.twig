@@ -5,10 +5,12 @@
     {# Hero listicle header #}
     {% set listicle = craft.entries.section('listicles').one() %}
     <header class="hero-header" style="background-image: url('{{ siteUrl }}uploads/listicles/{{ listicle.listicleImage.one() }}.jpg');">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="display-4 hero-heading">{{ listicle }}</h2>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 d-flex">
+                    <h2 class="display-4 hero-heading align-self-center">
+                        <span>{{ listicle }}</span>
+                    </h2>
                 </div>
             </div>
         </div>

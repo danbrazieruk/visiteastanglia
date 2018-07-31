@@ -1,10 +1,39 @@
 header.hero-header {
-	min-height: 40vh;
+	height: 40vh;
 	background-size: cover;
 	background-position: center;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: theme-color(dark);
+		opacity: 0.05;
+		transition: (all 0.2s ease-in-out);
+	}
 
 	.hero-heading {
-		background: theme-color(primary);
-		color: $white;
+		line-height: $display-line-height * 1.2;
+
+		span {
+			color: $white;
+			background: theme-color(primary);
+			display: inline;
+			position: relative;
+			padding: map_get($spacers, 1) 0;
+			box-shadow: (-(map_get($spacers, 2)) 0 0 theme-color(primary), (map_get($spacers, 2)) 0 0 theme-color(primary));
+		}
+	}
+
+	&:hover {
+		&:before {
+			opacity: 0.3;
+		}
 	}
 }

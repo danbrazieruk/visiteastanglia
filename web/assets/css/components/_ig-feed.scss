@@ -6,6 +6,23 @@ $ig-size: calc(100 / 6);
 	.ig-image {
 		flex: 0 0 16.666%;
 		height: 16.666vw;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			background: theme-color(dark);
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: (all 0.2s ease-in-out);
+		}
+
+		&:hover {
+			&:after {
+				opacity: 0.2;
+			}
+		}
 	}
 
 	&:before {

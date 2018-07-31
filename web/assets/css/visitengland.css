@@ -6510,18 +6510,50 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.5; }
 
 header.hero-header {
-  min-height: 40vh;
+  height: 40vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
+  header.hero-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343a40;
+    opacity: 0.05;
+    transition: all 0.2s ease-in-out; }
   header.hero-header .hero-heading {
-    background: #e42518;
-    color: #fff; }
+    line-height: 1.44; }
+    header.hero-header .hero-heading span {
+      color: #fff;
+      background: #e42518;
+      display: inline;
+      position: relative;
+      padding: 0.25rem 0;
+      box-shadow: -0.5rem 0 0 #e42518, 0.5rem 0 0 #e42518; }
+  header.hero-header:hover:before {
+    opacity: 0.3; }
 
 .ig-feed {
   position: relative; }
   .ig-feed .ig-image {
     flex: 0 0 16.666%;
-    height: 16.666vw; }
+    height: 16.666vw;
+    position: relative; }
+    .ig-feed .ig-image:after {
+      content: '';
+      position: absolute;
+      background: #343a40;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: all 0.2s ease-in-out; }
+    .ig-feed .ig-image:hover:after {
+      opacity: 0.2; }
   .ig-feed:before {
     content: '';
     position: absolute;
