@@ -6517,9 +6517,23 @@ header.hero-header {
     background: #e42518;
     color: #fff; }
 
-.ig-feed .ig-image {
-  flex: 0 0 16.666%;
-  height: 16.666vw; }
+.ig-feed {
+  position: relative; }
+  .ig-feed .ig-image {
+    flex: 0 0 16.666%;
+    height: 16.666vw; }
+  .ig-feed:before {
+    content: '';
+    position: absolute;
+    background-image: url("/assets/img/rose_spatter.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -6rem;
+    bottom: -3.6rem;
+    transform: translate(-40%, 0) rotate(-30deg);
+    width: 50%;
+    opacity: 0.3; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
