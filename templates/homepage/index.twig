@@ -17,6 +17,22 @@
     </header>
 
 
+    {# Introduction #}
+    <section id="introduction" class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h1 class="display-4">{{ entry.introductionHeading }}</h1>
+                </div>
+
+                <div class="col-lg-7">
+                    {{ entry.introductionBody }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     {# Activites #}
     <section id="activities" class="content-block">
         <div class="container">
@@ -34,9 +50,10 @@
                 <div class="col-5">
                     {# todo: handle image fallbacks #}
                     {# todo: use image.getUrl method #}
-                    <img src="{{ siteUrl }}uploads/activities/{{ activityHero.activityImage.one() }}.jpg" class="img-fluid">
 
-                    <h5>{{ activityHero }}</h5>
+                    <div class="activity" style="background-image: url('{{ siteUrl }}uploads/activities/{{ activityHero.activityImage.one() }}.jpg');">
+                        <h5>{{ activityHero }}</h5>
+                    </div>
                 </div>
 
 
@@ -62,12 +79,12 @@
     </section>
 
 
-    {# Locations #}
+    {# Places to stay #}
     <section id="locations" class="content-block">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Locations</h2>
+                    <h2>Places to stay</h2>
 
                 </div>
             </div>
@@ -75,24 +92,12 @@
     </section>
 
 
-    {# Plan your visit #}
+    {# What's on #}
     <section id="plan-your-visit" class="content-block">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>Plan your visit</h2>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    {# Newsletter #}
-    <section id="newsletter" class="content-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2>Newsletter</h2>
+                    <h2>What's on</h2>
                 </div>
             </div>
         </div>
@@ -104,7 +109,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="text-uppercase text-spaced mb-3">#VisitEngland</h2>
+                    <h2 class="text-uppercase text-spaced mb-3">#VisitEastAnglia</h2>
                 </div>
             </div>
         </div>

@@ -505,6 +505,58 @@
         ]
     },
     {
+        "name": "craftcms/redactor",
+        "version": "2.1.5",
+        "version_normalized": "2.1.5.0",
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/craftcms/redactor/zipball/6a508a603c07b55720f17132e2524420525c285a",
+            "reference": "6a508a603c07b55720f17132e2524420525c285a",
+            "shasum": ""
+        },
+        "require": {
+            "craftcms/cms": "^3.0.0-RC15"
+        },
+        "time": "2018-07-30T13:40:33+00:00",
+        "type": "craft-plugin",
+        "extra": {
+            "name": "Redactor",
+            "handle": "redactor",
+            "changelogUrl": "https://raw.githubusercontent.com/craftcms/redactor/master/CHANGELOG.md",
+            "downloadUrl": "https://github.com/craftcms/redactor/archive/master.zip"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "craft\\redactor\\": "src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pixel & Tonic",
+                "homepage": "https://pixelandtonic.com/"
+            }
+        ],
+        "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
+        "keywords": [
+            "cms",
+            "craftcms",
+            "html",
+            "redactor",
+            "yii2"
+        ],
+        "support": {
+            "email": "support@craftcms.com",
+            "issues": "https://github.com/craftcms/redactor/issues?state=open",
+            "source": "https://github.com/craftcms/redactor",
+            "docs": "https://github.com/craftcms/redactor",
+            "rss": "https://github.com/craftcms/redactor/commits/master.atom"
+        }
+    },
+    {
         "name": "craftcms/server-check",
         "version": "1.1.4",
         "version_normalized": "1.1.4.0",
@@ -2215,11 +2267,6 @@
         "name": "vlucas/phpdotenv",
         "version": "v2.5.1",
         "version_normalized": "2.5.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/vlucas/phpdotenv.git",
-            "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
-        },
         "dist": {
             "type": "zip",
             "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
