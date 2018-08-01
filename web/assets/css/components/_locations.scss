@@ -1,0 +1,26 @@
+.location {
+	.location__bg-img {
+		position: relative;
+		height: 200px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: theme-color(dark);
+			opacity: 0.05;
+			transition: (all 0.2s ease-in-out);
+		}
+	}
+
+	&:hover {
+		.location__bg-img {
+			&:after {
+				opacity: 0.4;
+			}
+		}
+	}
+}
