@@ -6585,8 +6585,12 @@ header.hero-header {
     background: #343a40;
     opacity: 0.05;
     transition: all 0.2s ease-in-out; }
+.location h4 {
+  transition: all 0.4s ease-in-out; }
 .location:hover .location__bg-img:after {
   opacity: 0.4; }
+.location:hover h4 {
+  transform: translate(0, -0.25rem); }
 
 main.homepage header.hero-header {
   position: relative; }
@@ -6635,6 +6639,11 @@ section#activities {
     width: 85%;
     background: rgba(138, 121, 137, 0.2);
     transform: skew(12deg) translate(-35%, -40%); }
+
+section#locations {
+  background-image: url("/assets/img/field.png");
+  background-size: cover;
+  background-position: center; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
