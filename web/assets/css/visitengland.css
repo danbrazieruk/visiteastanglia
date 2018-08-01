@@ -6571,6 +6571,15 @@ header.hero-header {
     width: 50%;
     opacity: 0.3; }
 
+@media screen and (min-width: 992px) {
+  nav#global-nav .navbar-brand {
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    transform: translate(0, 0); }
+    nav#global-nav .navbar-brand.hidden {
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(0, -10px); } }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

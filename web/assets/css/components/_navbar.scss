@@ -1,0 +1,16 @@
+// -- showing/hiding based on scroll (main.js)
+@media screen and (min-width: breakpoint-min('lg')) {
+	nav#global-nav {
+		.navbar-brand {
+			@include transition(all 0.2s ease-in-out);
+			opacity: 1;
+			transform: translate(0, 0);
+
+			&.hidden {
+				visibility: hidden;
+				opacity: 0;
+				transform: translate(0, -10px);
+			}
+		}
+	}
+}
