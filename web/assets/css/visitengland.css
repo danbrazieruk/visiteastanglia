@@ -6503,6 +6503,16 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-position: center; }
 
+.text-bg {
+  line-height: 1.392; }
+  .text-bg span {
+    color: #212529;
+    background: #fff;
+    display: inline;
+    position: relative;
+    padding: 0;
+    box-shadow: -0.5rem 0 0 #fff, 0.5rem 0 0 #fff; }
+
 .text-spaced {
   letter-spacing: 0.25rem; }
 
@@ -6531,13 +6541,13 @@ header.hero-header {
     opacity: 0.05;
     transition: all 0.2s ease-in-out; }
   header.hero-header .hero-heading {
-    line-height: 1.44; }
+    line-height: 1.68; }
     header.hero-header .hero-heading span {
       color: #fff;
       background: #a5b798;
       display: inline;
       position: relative;
-      padding: 0.25rem 0;
+      padding: 0;
       box-shadow: -0.5rem 0 0 #a5b798, 0.5rem 0 0 #a5b798; }
   header.hero-header:hover:before {
     opacity: 0.3; }
@@ -6630,8 +6640,9 @@ main.homepage header.hero-header {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%); }
-  main.homepage header.hero-header:after {
+      transform: translate(-50%, -50%);
+      z-index: -1; }
+  main.homepage header.hero-header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -6643,6 +6654,26 @@ main.homepage header.hero-header {
     background: #343a40;
     opacity: 0.2;
     transition: all 0.2s ease-in-out; }
+  main.homepage header.hero-header:hover:before {
+    opacity: 0.4; }
+
+section#introduction {
+  background-image: url("/assets/img/watermarks2.png");
+  background-size: cover;
+  background-position: center; }
+
+section#activities {
+  position: relative;
+  overflow: hidden; }
+  section#activities:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 95%;
+    width: 85%;
+    background: rgba(138, 121, 137, 0.2);
+    transform: skew(20deg) translate(-35%, -40%); }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

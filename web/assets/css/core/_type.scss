@@ -1,7 +1,25 @@
+// Headings with block background
+.text-bg {
+	line-height: $headings-line-height * 1.16;
+
+	span {
+		color: $body-color;
+		background: $white;
+		display: inline;
+		position: relative;
+		padding: 0;
+		box-shadow: (-(map_get($spacers, 2)) 0 0 $white, (map_get($spacers, 2)) 0 0 $white);
+	}
+}
+
+
+// Standardised letter spacing
 .text-spaced {
 	letter-spacing: $letter-spacing;
 }
 
+
+// Standardised text/element transparency
 .text-opacity {
 	opacity: 0.5;
 }

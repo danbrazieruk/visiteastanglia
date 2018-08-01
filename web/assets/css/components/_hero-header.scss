@@ -19,14 +19,14 @@ header.hero-header {
 	}
 
 	.hero-heading {
-		line-height: $display-line-height * 1.2;
+		line-height: $display-line-height * 1.4;
 
 		span {
 			color: $white;
 			background: theme-color(primary);
 			display: inline;
 			position: relative;
-			padding: map_get($spacers, 1) 0;
+			padding: 0;
 			box-shadow: (-(map_get($spacers, 2)) 0 0 theme-color(primary), (map_get($spacers, 2)) 0 0 theme-color(primary));
 		}
 	}
