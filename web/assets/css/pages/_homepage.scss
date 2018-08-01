@@ -1,0 +1,35 @@
+main.homepage {
+	header.hero-header {
+		position: relative;
+
+		& .video-bg {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+
+			& video {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: theme-color(dark);
+			opacity: 0.2;
+			transition: (all 0.2s ease-in-out);
+		}
+	}
+}

@@ -2,14 +2,23 @@
 
 {% block main %}
 
-    {# Hero listicle header #}
-    {% set listicle = craft.entries.section('listicles').one() %}
-    <header class="hero-header" style="background-image: url('{{ siteUrl }}uploads/listicles/{{ listicle.listicleImage.one() }}.jpg');">
+    {# Masthead #}
+    <header class="hero-header">
+
+        {# Video #}
+        {# - todo: different video formats #}
+
+        <div class="video-bg">
+            <video autoplay loop muted >
+                <source src="/assets/video/visiteastanglia.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 d-flex">
                     <h2 class="display-4 hero-heading align-self-center">
-                        <span>{{ listicle }}</span>
+                        <span></span>
                     </h2>
                 </div>
             </div>
@@ -29,6 +38,18 @@
                     <div class="pt-4 px-lg-5">
                         {{ entry.introductionBody }}
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {# Search #}
+    <section class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Search</h2>
                 </div>
             </div>
         </div>
@@ -106,7 +127,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="text-uppercase text-muted text-opacity text-spaced mb-3">#VisitEastAnglia</h2>
+                    <h2 class="text-uppercase text-info text-spaced mb-3">#VisitEastAnglia</h2>
                 </div>
             </div>
         </div>
