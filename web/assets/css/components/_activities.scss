@@ -31,7 +31,7 @@ $activity-height: 20vh;
 			background: $white;
 			display: inline;
 			position: relative;
-			padding: map_get($spacers, 1) 0;
+			padding: 0;
 			box-shadow: (-(map_get($spacers, 2)) 0 0 $white, (map_get($spacers, 2)) 0 0 $white);
 		}
 	}

@@ -6569,7 +6569,7 @@ header.hero-header {
       background: #fff;
       display: inline;
       position: relative;
-      padding: 0.25rem 0;
+      padding: 0;
       box-shadow: -0.5rem 0 0 #fff, 0.5rem 0 0 #fff; }
   .activity:hover h4 {
     transform: translate(0, -0.25rem); }
