@@ -179,6 +179,32 @@
                     </h2>
                 </div>
             </div>
+
+            <div class="row">
+
+                {% for event in craft.entries.section('events').limit(3) %}
+
+                    <div class="col-md-4 event mb-4">
+
+                        <div class="bg-white pb-2">
+                            <div class="event__bg-img bg-img" style="background-image: url('{{ event.eventImage.first().getUrl() }}');"></div>
+
+                            <div class="px-md-3">
+                                <h4 class="text-bg">
+                                    <span>{{ event }}</span>
+                                </h4>
+
+                                <p class="text-primary mb-1"><i class="fa fa-fw fa-map text-muted"></i> {{ event.eventLocation }}</p>
+
+                                <p>{{ event.eventDate|date('jS F Y') }}</p>
+
+                                <a href="#" class="btn btn-sm btn-outline-dark">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
         </div>
     </section>
 
