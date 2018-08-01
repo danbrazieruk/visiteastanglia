@@ -1,3 +1,14 @@
-.activity {
+$activity-height: 20vh;
 
+.activity {
+	background-size: cover;
+	background-position: center;
+	height: $activity-height;
+}
+
+// Hero-specific
+@media screen and (min-width: breakpoint-min(lg)) {
+	.activity--hero {
+		height: $activity-height * 2;
+	}
 }

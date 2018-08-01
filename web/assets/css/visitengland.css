@@ -6542,6 +6542,14 @@ header.hero-header {
   header.hero-header:hover:before {
     opacity: 0.3; }
 
+.activity {
+  background-size: cover;
+  background-position: center;
+  height: 20vh; }
+
+@media screen and (min-width: 992px) {
+  .activity--hero {
+    height: 40vh; } }
 .ig-feed {
   position: relative; }
   .ig-feed .ig-image {
