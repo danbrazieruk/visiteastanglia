@@ -58,9 +58,9 @@ section#activities {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		height: 95%;
+		height: 150%;
 		width: 85%;
 		background: transparentize($purple, 0.8);
-		transform: skew(20deg) translate(-35%, -40%);
+		transform: skew(12deg) translate(-35%, -40%);
 	}
 }
