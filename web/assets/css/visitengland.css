@@ -6543,9 +6543,38 @@ header.hero-header {
     opacity: 0.3; }
 
 .activity {
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 20vh; }
+  .activity:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343a40;
+    opacity: 0.05;
+    transition: all 0.2s ease-in-out; }
+  .activity h4 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    line-height: 1.44;
+    transition: all 0.4s ease-in-out; }
+    .activity h4 span {
+      background: #fff;
+      display: inline;
+      position: relative;
+      padding: 0.25rem 0;
+      box-shadow: -0.5rem 0 0 #fff, 0.5rem 0 0 #fff; }
+  .activity:hover h4 {
+    transform: translate(0, -0.25rem); }
+  .activity:hover:before {
+    opacity: 0.3; }
 
 @media screen and (min-width: 992px) {
   .activity--hero {

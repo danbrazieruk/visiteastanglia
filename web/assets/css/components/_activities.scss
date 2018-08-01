@@ -1,9 +1,50 @@
 $activity-height: 20vh;
 
 .activity {
+	position: relative;
 	background-size: cover;
 	background-position: center;
 	height: $activity-height;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: theme-color(dark);
+		opacity: 0.05;
+		transition: (all 0.2s ease-in-out);
+	}
+
+	h4 {
+		position: absolute;
+		bottom: map_get($spacers, 3);
+		left: (map_get($spacers, 3) + map_get($spacers, 2));
+		line-height: $headings-line-height * 1.2;
+		transition: (all 0.4s ease-in-out);
+
+		& span {
+			background: $white;
+			display: inline;
+			position: relative;
+			padding: map_get($spacers, 1) 0;
+			box-shadow: (-(map_get($spacers, 2)) 0 0 $white, (map_get($spacers, 2)) 0 0 $white);
+		}
+	}
+
+	&:hover {
+		h4 {
+			transform: translate(0, -0.25rem);
+		}
+
+		&:before {
+			opacity: 0.3;
+		}
+	}
 }
 
 // Hero-specific
